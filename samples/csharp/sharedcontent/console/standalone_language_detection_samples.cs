@@ -26,7 +26,7 @@ namespace MicrosoftSpeechSDKSamples
             // <languageDetectionWithMicrophone>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Single-Shot with Latency priority
             // Please refer to the documentation of language id with different modes
@@ -78,7 +78,7 @@ namespace MicrosoftSpeechSDKSamples
             // <languageDetectionInAccuracyWithFile>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Single-Shot with Accuracy
             // Please refer to the documentation of language id with different modes
@@ -134,7 +134,7 @@ namespace MicrosoftSpeechSDKSamples
             // <languageDetectionContinuousWithFile>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Please refer to the documentation of language id with different modes
             config.SetProperty(PropertyId.SpeechServiceConnection_ContinuousLanguageIdPriority, "Latency");

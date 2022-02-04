@@ -531,66 +531,66 @@ namespace MicrosoftSpeechSDKSamples
         //
         // Speech recognition with Microsoft Audio Stack (MAS) enabled
         //
-        private static void SpeechRecognitionWithMASEnabled()
-        {
-            ConsoleKeyInfo x;
+        //private static void SpeechRecognitionWithMASEnabled()
+        //{
+        //    ConsoleKeyInfo x;
 
-            do
-            {
-                Console.WriteLine("");
-                Console.WriteLine(" Speech SDK - Speech Recognition with Microsoft Audio Stack (MAS) Samples");
-                Console.WriteLine("");
-                Console.WriteLine(choose);
-                Console.WriteLine("");
-                Console.WriteLine(" 1. Speech recognition from default microphone.");
-                Console.WriteLine(" 2. Speech recognition from a microphone with pre-defined microphone array geometry specified.");
-                Console.WriteLine(" 3. Speech recognition from multi-channel file with custom microphone array geometry specified.");
-                Console.WriteLine(" 4. Speech recognition from pull stream with custom set of enhancements enabled.");
-                Console.WriteLine(" 5. Speech recognition from push stream with beamforming angles specified.");
-                Console.WriteLine("");
-                Console.Write(prompt);
+        //    do
+        //    {
+        //        Console.WriteLine("");
+        //        Console.WriteLine(" Speech SDK - Speech Recognition with Microsoft Audio Stack (MAS) Samples");
+        //        Console.WriteLine("");
+        //        Console.WriteLine(choose);
+        //        Console.WriteLine("");
+        //        Console.WriteLine(" 1. Speech recognition from default microphone.");
+        //        Console.WriteLine(" 2. Speech recognition from a microphone with pre-defined microphone array geometry specified.");
+        //        Console.WriteLine(" 3. Speech recognition from multi-channel file with custom microphone array geometry specified.");
+        //        Console.WriteLine(" 4. Speech recognition from pull stream with custom set of enhancements enabled.");
+        //        Console.WriteLine(" 5. Speech recognition from push stream with beamforming angles specified.");
+        //        Console.WriteLine("");
+        //        Console.Write(prompt);
 
-                x = Console.ReadKey();
-                Console.WriteLine("\n");
-                bool sampleWasRun = true;
+        //        x = Console.ReadKey();
+        //        Console.WriteLine("\n");
+        //        bool sampleWasRun = true;
 
-                switch (x.Key)
-                {
-                    case ConsoleKey.D1:
-                    case ConsoleKey.NumPad1:
-                        SpeechRecognitionSamples.ContinuousRecognitionFromDefaultMicrophoneWithMASEnabled().Wait();
-                        break;
-                    case ConsoleKey.D2:
-                    case ConsoleKey.NumPad2:
-                        SpeechRecognitionSamples.RecognitionFromMicrophoneWithMASEnabledAndPresetGeometrySpecified().Wait();
-                        break;
-                    case ConsoleKey.D3:
-                    case ConsoleKey.NumPad3:
-                        SpeechRecognitionSamples.ContinuousRecognitionFromMultiChannelFileWithMASEnabledAndCustomGeometrySpecified().Wait();
-                        break;
-                    case ConsoleKey.D4:
-                    case ConsoleKey.NumPad4:
-                        SpeechRecognitionSamples.RecognitionFromPullStreamWithSelectMASEnhancementsEnabled().Wait();
-                        break;
-                    case ConsoleKey.D5:
-                    case ConsoleKey.NumPad5:
-                        SpeechRecognitionSamples.ContinuousRecognitionFromPushStreamWithMASEnabledAndBeamformingAnglesSpecified().Wait();
-                        break;
-                    case ConsoleKey.D0:
-                    case ConsoleKey.NumPad0:
-                        Console.WriteLine(back);
-                        sampleWasRun = false;
-                        break;
-                    default:
-                        Console.WriteLine(invalid);
-                        sampleWasRun = false;
-                        break;
-                }
+        //        switch (x.Key)
+        //        {
+        //            case ConsoleKey.D1:
+        //            case ConsoleKey.NumPad1:
+        //                SpeechRecognitionSamples.ContinuousRecognitionFromDefaultMicrophoneWithMASEnabled().Wait();
+        //                break;
+        //            case ConsoleKey.D2:
+        //            case ConsoleKey.NumPad2:
+        //                SpeechRecognitionSamples.RecognitionFromMicrophoneWithMASEnabledAndPresetGeometrySpecified().Wait();
+        //                break;
+        //            case ConsoleKey.D3:
+        //            case ConsoleKey.NumPad3:
+        //                SpeechRecognitionSamples.ContinuousRecognitionFromMultiChannelFileWithMASEnabledAndCustomGeometrySpecified().Wait();
+        //                break;
+        //            case ConsoleKey.D4:
+        //            case ConsoleKey.NumPad4:
+        //                SpeechRecognitionSamples.RecognitionFromPullStreamWithSelectMASEnhancementsEnabled().Wait();
+        //                break;
+        //            case ConsoleKey.D5:
+        //            case ConsoleKey.NumPad5:
+        //                SpeechRecognitionSamples.ContinuousRecognitionFromPushStreamWithMASEnabledAndBeamformingAnglesSpecified().Wait();
+        //                break;
+        //            case ConsoleKey.D0:
+        //            case ConsoleKey.NumPad0:
+        //                Console.WriteLine(back);
+        //                sampleWasRun = false;
+        //                break;
+        //            default:
+        //                Console.WriteLine(invalid);
+        //                sampleWasRun = false;
+        //                break;
+        //        }
 
-                if (sampleWasRun) Console.WriteLine(done);
+        //        if (sampleWasRun) Console.WriteLine(done);
 
-            } while (x.Key != ConsoleKey.D0);
-        }
+        //    } while (x.Key != ConsoleKey.D0);
+        //}
 
         //
         // Shows how to enabled Speech SDK trace logging in different ways. Microsoft may ask you to collect logs
@@ -686,9 +686,9 @@ namespace MicrosoftSpeechSDKSamples
                 switch (x.Key)
                 {
                     case ConsoleKey.D1:
-                    case ConsoleKey.NumPad1:
-                        SpeechRecognition();
-                        break;
+                    //case ConsoleKey.NumPad1:
+                    //    SpeechRecognition();
+                    //    break;
                     case ConsoleKey.D2:
                     case ConsoleKey.NumPad2:
                         SpeechTranslation();

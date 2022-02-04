@@ -22,7 +22,7 @@ namespace MicrosoftSpeechSDKSamples
     {
         public static async Task RemoteConversationWithFileAsync()
         {
-            string key = "YourSubscriptionKey";
+            string key = "8c2a080e80a4489bbc8fc4fcbfa10e29";
             string region = "YourSubscriptionRegion";
 
             // Upload the audio to the service

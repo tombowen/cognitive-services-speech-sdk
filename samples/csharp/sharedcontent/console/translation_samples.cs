@@ -32,7 +32,7 @@ namespace MicrosoftSpeechSDKSamples
 
             // Creates an instance of a speech translation config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechTranslationConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechTranslationConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             config.SpeechRecognitionLanguage = fromLanguage;
             config.VoiceName = GermanVoice;
 
@@ -140,7 +140,7 @@ namespace MicrosoftSpeechSDKSamples
 
             // Creates an instance of a speech translation config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechTranslationConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechTranslationConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             config.SpeechRecognitionLanguage = fromLanguage;
 
             // Translation target language(s).
@@ -243,7 +243,7 @@ namespace MicrosoftSpeechSDKSamples
 
             // Creates an instance of a speech translation config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechTranslationConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechTranslationConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             config.SpeechRecognitionLanguage = fromLanguage;
 
             // Translation target language(s).
@@ -367,7 +367,7 @@ namespace MicrosoftSpeechSDKSamples
 
             // Creates an instance of a speech translation config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechTranslationConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechTranslationConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             config.SpeechRecognitionLanguage = fromLanguage;
 
             // Translation target language(s).
@@ -479,7 +479,7 @@ namespace MicrosoftSpeechSDKSamples
 
             // Creates an instance of a speech translation config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechTranslationConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechTranslationConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // This is required, even when language id is enabled.
             config.SpeechRecognitionLanguage = fromLanguage;
@@ -588,12 +588,12 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Offical v2 endpoint with service region
             // Please replace the service region with your region
-            var v2EndpointInString = String.Format("wss://{0}.stt.speech.microsoft.com/speech/universal/v2", "YourServiceRegion");
+            var v2EndpointInString = String.Format("wss://{0}.stt.speech.microsoft.com/speech/universal/v2", "eastus");
             var v2EndpointUrl = new Uri(v2EndpointInString);
 
             // Creates an instance of a speech translation config with specified subscription key and service region.
             // Please replace the service subscription key with your subscription key
-            var config = SpeechTranslationConfig.FromEndpoint(v2EndpointUrl, "YourSubscriptionKey");
+            var config = SpeechTranslationConfig.FromEndpoint(v2EndpointUrl, "8c2a080e80a4489bbc8fc4fcbfa10e29");
 
             // Sets source languages
             // The source language will be detected by the language detection feature. 

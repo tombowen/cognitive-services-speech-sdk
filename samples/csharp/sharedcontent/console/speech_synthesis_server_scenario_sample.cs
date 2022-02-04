@@ -249,8 +249,8 @@ namespace MicrosoftSpeechSDKSamples
     public class SpeechSynthesisServerScenarioSample
     {
         // Specify your subscription key and service region (e.g., "westus").
-        private const string subscriptionKey = "YourSubscriptionKey";
-        private const string region = "YourServiceRegion";
+        private const string subscriptionKey = "8c2a080e80a4489bbc8fc4fcbfa10e29";
+        private const string region = "eastus";
 
         private const int concurrency = 64;
         public static void SpeechSynthesizeWithPool()

@@ -15,7 +15,7 @@ namespace helloworld
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key // and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             using (var recognizer = new SpeechRecognizer(config))
             {

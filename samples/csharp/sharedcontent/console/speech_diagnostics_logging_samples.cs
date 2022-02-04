@@ -26,7 +26,7 @@ namespace MicrosoftSpeechSDKSamples
             FileLogger.Start(logFile);
 
             // Do your Speech SDK calls here... for example:
-            SpeechConfig config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            SpeechConfig config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             SpeechRecognizer recognizer = new SpeechRecognizer(config);
 
             // Stop logging
@@ -52,7 +52,7 @@ namespace MicrosoftSpeechSDKSamples
             FileLogger.Start(logFile);
 
             // Do your Speech SDK calls here... for example:
-            SpeechConfig config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            SpeechConfig config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             SpeechRecognizer recognizer = new SpeechRecognizer(config);
 
             // Stop logging
@@ -94,7 +94,7 @@ namespace MicrosoftSpeechSDKSamples
             try
             {
                 // Do your Speech SDK calls here... for example:
-                SpeechConfig config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+                SpeechConfig config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
                 SpeechRecognizer recognizer = new SpeechRecognizer(config);
             }
             finally
@@ -131,7 +131,7 @@ namespace MicrosoftSpeechSDKSamples
             try
             {
                 // Do your Speech SDK calls here... for example:
-                SpeechConfig config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+                SpeechConfig config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
                 SpeechRecognizer recognizer = new SpeechRecognizer(config);
             }
             finally
@@ -172,7 +172,7 @@ namespace MicrosoftSpeechSDKSamples
             MemoryLogger.Start();
 
             // Do your Speech SDK calls here... for example:
-            SpeechConfig config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            SpeechConfig config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             SpeechRecognizer recognizer = new SpeechRecognizer(config);
 
             // Define the full path and name of a log file on your local disk

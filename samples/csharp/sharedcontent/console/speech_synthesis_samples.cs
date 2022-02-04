@@ -18,7 +18,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // The default language is "en-us".
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer using the default speaker as audio output.
             using (var synthesizer = new SpeechSynthesizer(config))
@@ -62,7 +62,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Sets the synthesis language.
             // The full list of supported language can be found here:
@@ -112,7 +112,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Sets the voice name.
             // e.g. "Microsoft Server Speech Text to Speech Voice (en-US, JennyNeural)".
@@ -164,9 +164,9 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             // Replace with the endpoint id of your Custom Voice model.
-            config.EndpointId = "YourEndpointId";
+            config.EndpointId = "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken";
             // Replace with the voice name of your Custom Voice model.
             config.SpeechSynthesisVoiceName = "YourVoiceName";
 
@@ -213,7 +213,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // The default language is "en-us".
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer using file as audio output.
             // Replace with your own audio file name.
@@ -261,7 +261,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // The default language is "en-us".
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Sets the synthesis output format.
             // The full list of supported format can be found here:
@@ -313,7 +313,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates an audio out stream.
             using (var stream = AudioOutputStream.CreatePullStream())
@@ -375,7 +375,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates an instance of a customer class inherited from PushAudioOutputStreamCallback
             var callback = new PushAudioOutputStreamSampleCallback();
@@ -429,7 +429,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer with a null output stream.
             // This means the audio output data will not be written to any stream.
@@ -477,7 +477,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer with a null output stream.
             // This means the audio output data will not be written to any stream.
@@ -547,7 +547,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer with a null output stream.
             // This means the audio output data will not be written to any stream.
@@ -611,7 +611,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer with a null output stream.
             // This means the audio output data will not be written to any stream.
@@ -667,7 +667,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer with a null output stream.
             // This means the audio output data will not be written to any stream.
@@ -723,7 +723,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer with a null output stream.
             // This means the audio output data will not be written to any stream.
@@ -773,7 +773,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // The default language is "en-us".
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates an instance of AutoDetectSourceLanguageConfig with open languages range
             var autoDetectSourceLanguageConfig = AutoDetectSourceLanguageConfig.FromOpenRange();
@@ -824,7 +824,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // The default language is "en-us".
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech synthesizer
             using (var synthesizer = new SpeechSynthesizer(config, null as AudioConfig))
@@ -900,8 +900,8 @@ namespace MicrosoftSpeechSDKSamples
         public static async Task SynthesizeOnceUseCustomVoiceToSpeakerAsyncSwitchPlatformVoice()
         {
             // Create a custom voice speech resource with subscription key, service region, endpoint ID and voice name.
-            SpeechSynthesisResult synthesisResult = await SynthesizeOnceAsyncInternal("YourSubscriptionKey",
-                "YourServiceRegion", "YourEndpointId", "YourCustomVoiceName");
+            SpeechSynthesisResult synthesisResult = await SynthesizeOnceAsyncInternal("8c2a080e80a4489bbc8fc4fcbfa10e29",
+                "eastus", "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken", "YourCustomVoiceName");
             if (synthesisResult.Reason == ResultReason.Canceled)
             {
                 SpeechSynthesisCancellationDetails details = SpeechSynthesisCancellationDetails.FromResult(synthesisResult);
@@ -911,7 +911,7 @@ namespace MicrosoftSpeechSDKSamples
                     || details.ErrorDetails.Contains("Error code: 1007"))
                 {
                     // Synthesize using a standard platform voice, e.g. en-US-JennyNeural
-                    synthesisResult = await SynthesizeOnceAsyncInternal("YourSubscriptionKey", "YourServiceRegion", null, "YourPlatformVoiceName");
+                    synthesisResult = await SynthesizeOnceAsyncInternal("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus", null, "YourPlatformVoiceName");
                 }
             }
         }
@@ -924,7 +924,7 @@ namespace MicrosoftSpeechSDKSamples
             // Also create a speech resource with secondary subscription key and service region.
             // Copy Custom Voice model from primary region to secondary region and deploy.
             SpeechSynthesisResult synthesisResult = await SynthesizeOnceAsyncInternal("PrimarySubscriptionKey",
-                "PrimarySubscriptionRegion", "YourEndpointIdOnPrimaryRegion", "YourCustomVoiceName");
+                "PrimarySubscriptionRegion", "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetokenOnPrimaryRegion", "YourCustomVoiceName");
             if (synthesisResult.Reason == ResultReason.Canceled)
             {
                 SpeechSynthesisCancellationDetails details = SpeechSynthesisCancellationDetails.FromResult(synthesisResult);
@@ -935,7 +935,7 @@ namespace MicrosoftSpeechSDKSamples
                 {
                     // Synthesize using same custom voice model in secondary region.
                     synthesisResult = await SynthesizeOnceAsyncInternal("SecondarySubscriptionKey", "SecondarySubscriptionRegion",
-                        "YourEndpointIdOnSecondaryRegion", "YourCustomVoiceName");
+                        "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetokenOnSecondaryRegion", "YourCustomVoiceName");
                 }
             }
         }

@@ -26,7 +26,7 @@ namespace MicrosoftSpeechSDKSamples
             // <recognitionWithMicrophone>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Please refer to the documentation of language id with different modes
             config.SetProperty(PropertyId.SpeechServiceConnection_SingleLanguageIdPriority, "Latency");
@@ -79,12 +79,12 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Offical v2 endpoint
             // Replace the region with your service region
-            var v2EndpointInString = String.Format("wss://{0}.stt.speech.microsoft.com/speech/universal/v2", "YourServiceRegion");
+            var v2EndpointInString = String.Format("wss://{0}.stt.speech.microsoft.com/speech/universal/v2", "eastus");
             var v2EndpointUrl = new Uri(v2EndpointInString);
 
             // Creates an instance of a speech config with specified subscription key.
             // Replace the subscription key with your subscription key
-            var config = SpeechConfig.FromEndpoint(v2EndpointUrl, "YourSubscriptionKey");
+            var config = SpeechConfig.FromEndpoint(v2EndpointUrl, "8c2a080e80a4489bbc8fc4fcbfa10e29");
 
             // Please refer to the documentation of language id with different modes
             config.SetProperty(PropertyId.SpeechServiceConnection_ContinuousLanguageIdPriority, "Latency");

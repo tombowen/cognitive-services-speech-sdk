@@ -25,7 +25,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // The default language is "en-us".
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates a speech recognizer using microphone as audio input.
             using (var recognizer = new SpeechRecognizer(config))
@@ -71,7 +71,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
  
             // Replace the language with your language in BCP-47 format, e.g., en-US.
             var language = "de-DE";
@@ -147,9 +147,9 @@ namespace MicrosoftSpeechSDKSamples
             // <recognitionCustomized>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
             // Replace with the CRIS endpoint id of your customized model.
-            var sourceLanguageConfig = SourceLanguageConfig.FromLanguage("en-US", "YourEndpointId");
+            var sourceLanguageConfig = SourceLanguageConfig.FromLanguage("en-US", "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken");
 
             // Creates a speech recognizer using microphone as audio input.
             using (var recognizer = new SpeechRecognizer(config, sourceLanguageConfig))
@@ -195,7 +195,7 @@ namespace MicrosoftSpeechSDKSamples
             // <recognitionContinuousWithFile>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -268,7 +268,7 @@ namespace MicrosoftSpeechSDKSamples
             // <recognitionWithCompressedInputPullStreamAudio>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -345,7 +345,7 @@ namespace MicrosoftSpeechSDKSamples
             // <recognitionWithCompressedInputPushStreamAudio>
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -435,7 +435,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -507,7 +507,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -598,7 +598,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates an instance of a keyword recognition model. Update this to
             // point to the location of your keyword recognition model.
@@ -687,7 +687,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -763,7 +763,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates an instance of AutoDetectSourceLanguageConfig with the 2 source language candidates
             // Currently this feature only supports 2 different language candidates
@@ -849,7 +849,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var sourceLanguageConfigs = new SourceLanguageConfig[]
             {
@@ -858,7 +858,7 @@ namespace MicrosoftSpeechSDKSamples
                 SourceLanguageConfig.FromLanguage("en-US"),
 
                 // Replace the id with the CRIS endpoint id of your customized model. If the speech is in fr-FR, the service will use the corresponding customized model for speech recognition
-                SourceLanguageConfig.FromLanguage("fr-FR", "YourEndpointId"),
+                SourceLanguageConfig.FromLanguage("fr-FR", "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken"),
             };
 
             // Creates an instance of AutoDetectSourceLanguageConfig with the 2 source language configurations
@@ -971,7 +971,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // Note: The pronunciation assessment feature is currently only available on en-US language.
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // The pronunciation assessment service has a longer default end silence timeout (5 seconds) than normal STT
             // as the pronunciation assessment is widely used in education scenario where kids have longer break in reading.
@@ -1051,7 +1051,7 @@ namespace MicrosoftSpeechSDKSamples
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
             // Note: The pronunciation assessment feature is currently only available on en-US language.
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Read audio data from file. In real scenario this can be from memory or network
             var audioDataWithHeader = File.ReadAllBytes("whatstheweatherlike.wav");
@@ -1145,7 +1145,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -1221,7 +1221,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates an instance of audio config using a microphone as audio input and with audio processing options specified.
             // All default enhancements from Microsoft Audio Stack are enabled and preset microphone array geometry is specified
@@ -1274,7 +1274,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
@@ -1366,7 +1366,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             // Creates an instance of audio config with pull stream as audio input and with audio processing options specified.
             // All default enhancements from Microsoft Audio Stack are enabled except acoustic echo cancellation and preset
@@ -1417,7 +1417,7 @@ namespace MicrosoftSpeechSDKSamples
         {
             // Creates an instance of a speech config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+            var config = SpeechConfig.FromSubscription("8c2a080e80a4489bbc8fc4fcbfa10e29", "eastus");
 
             var stopRecognition = new TaskCompletionSource<int>();
 
